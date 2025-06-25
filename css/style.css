@@ -1,0 +1,342 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Alegreya&display=swap');
+
+/* Variables de colores */
+:root {
+  --verde-oscuro: #27541d;
+  --beige-claro: #f5f1e9;
+  --verde-claro: #3a7d23;
+  --texto-oscuro: #333;
+  --gris-claro: #bbb;
+  --rojo-error: #d94444;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: var(--beige-claro);
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  color: var(--texto-oscuro);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor general para el contenido */
+main {
+  flex: 1;
+  max-width: 1000px;
+  width: 90%;
+  margin: 4rem auto 3rem;
+  padding: 1rem;
+  background: rgba(255 255 255 / 0.85);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Header y navegación */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--beige-claro);
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Alegreya', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--verde-claro);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links li a {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  color: var(--verde-oscuro);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--verde-claro);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--verde-claro);
+}
+
+/* Ocultar menú al hacer scroll */
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+/* Animación de fadeInUp para main */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Títulos generales */
+h1 {
+  font-family: 'Alegreya', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--verde-oscuro);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--verde-oscuro);
+  border-bottom: 2px solid var(--verde-claro);
+  padding-bottom: 0.3rem;
+}
+
+/* Enlaces y botones */
+a {
+  color: var(--verde-oscuro);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--verde-claro);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--verde-oscuro);
+  color: #fff;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(39 84 29 / 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: var(--verde-claro);
+  box-shadow: 0 8px 20px rgb(58 125 35 / 0.6);
+}
+
+/* Inicio (index.html) */
+.home-hero {
+  position: relative;
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--beige-claro);
+  text-shadow: 0 0 8px rgb(0 0 0 / 0.7);
+  animation: zoomIn 15s ease infinite alternate;
+}
+
+.home-hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.home-hero p {
+  font-size: 1.25rem;
+  max-width: 650px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Galería (portfolio.html) */
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.category {
+  position: relative;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category a {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 0 0 6px rgb(0 0 0 / 0.8);
+  z-index: 2;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgb(0 0 0 / 0.25);
+}
+
+.gallery-section {
+  margin-bottom: 3rem;
+}
+
+.gallery.masonry {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.gallery-item {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  break-inside: avoid;
+}
+
+.gallery-item:hover {
+  transform: scale(1.07);
+}
+
+/* Sobre mí (sobre-mi.html) */
+
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto 2rem;
+  box-shadow: 0 6px 15px rgb(39 84 29 / 0.3);
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+.about p {
+  font-size: 1.15rem;
+  color: var(--texto-oscuro);
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+/* Blog (blog.html) */
+
+.blog-posts {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post {
+  background: #fff;
+  padding: 1.6rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 8px 20px rgb(39 84 29 / 0.3);
+}
+
+.post h2 {
+  margin-bottom: 0.3rem;
+ 
