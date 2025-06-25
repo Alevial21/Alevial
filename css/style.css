@@ -467,3 +467,71 @@ textarea.error {
     font-size: 1.5rem;
   }
 }
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  background-color: #f5f0e6; /* beige claro tipo papel */
+  font-family: 'Lora', serif;
+  color: #27541d;
+}
+
+.carousel {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.hero-buttons .btn {
+  background-color: #27541d;
+  color: #f5f0e6;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  background-color: #1f4316;
+  box-shadow: 0 0 10px #1f4316;
+}
