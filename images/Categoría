@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porfolio | Alevial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Neuton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="portfolio.html" class="active">Porfolio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="portfolio-section">
+    <h2>Porfolio de Fotografía</h2>
+
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-category="todos">Todos</button>
+      <button class="filter-btn" data-category="fauna">Fauna</button>
+      <button class="filter-btn" data-category="tauinas">Tauinas</button>
+      <button class="filter-btn" data-category="turismo">Turismo</button>
+      <button class="filter-btn" data-category="deportes">Deportes</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Fauna -->
+      <div class="portfolio-item fauna" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80');" aria-label="Fauna 1"></div>
+      <div class="portfolio-item fauna" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80');" aria-label="Fauna 2"></div>
+      <div class="portfolio-item fauna" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1445820137045-8a78e7ed8ed0?auto=format&fit=crop&w=600&q=80');" aria-label="Fauna 3"></div>
+
+      <!-- Tauinas -->
+      <div class="portfolio-item tauinas" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1531983412531-b60d3e27ed6e?auto=format&fit=crop&w=600&q=80');" aria-label="Tauinas 1"></div>
+      <div class="portfolio-item tauinas" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1532596413509-124f63e0aa7f?auto=format&fit=crop&w=600&q=80');" aria-label="Tauinas 2"></div>
+      <div class="portfolio-item tauinas" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80');" aria-label="Tauinas 3"></div>
+
+      <!-- Turismo -->
+      <div class="portfolio-item turismo" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');" aria-label="Turismo 1"></div>
+      <div class="portfolio-item turismo" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80');" aria-label="Turismo 2"></div>
+      <div class="portfolio-item turismo" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80');" aria-label="Turismo 3"></div>
+
+      <!-- Deportes -->
+      <div class="portfolio-item deportes" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80');" aria-label="Deportes 1"></div>
+      <div class="portfolio-item deportes" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1509475826633-fed577a2c71b?auto=format&fit=crop&w=600&q=80');" aria-label="Deportes 2"></div>
+      <div class="portfolio-item deportes" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1526403220531-57f8c56de7a3?auto=format&fit=crop&w=600&q=80');" aria-label="Deportes 3"></div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
