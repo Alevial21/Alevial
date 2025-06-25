@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porfolio – Alevial</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="navbar">
+    <nav class="nav">
+      <a href="index.html" class="logo">Alevial</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portfolio.html" class="active">Porfolio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio-header scroll-fade">
+    <h1>Porfolio</h1>
+    <p>Explora mi trabajo dividido por temáticas.</p>
+  </section>
+
+  <section class="categories scroll-fade">
+    <div class="category" onclick="filterGallery('capeas')">🐂 Capeas y Festejos</div>
+    <div class="category" onclick="filterGallery('deporte')">🏃‍♂️ Deporte</div>
+    <div class="category" onclick="filterGallery('fauna')">🦌 Fauna silvestre</div>
+    <div class="category" onclick="filterGallery('turismo')">🏞️ Turismo</div>
+  </section>
+
+  <section class="gallery masonry scroll-fade">
+    <!-- Capeas -->
+    <img src="https://source.unsplash.com/400x600/?bull" alt="Capeas" data-category="capeas" onclick="openLightbox(this)">
+    <img src="https://source.unsplash.com/400x500/?toros" alt="Capeas" data-category="capeas" onclick="openLightbox(this)">
+
+    <!-- Deporte -->
+    <img src="https://source.unsplash.com/400x600/?sport,runner" alt="Deporte" data-category="deporte" onclick="openLightbox(this)">
+    <img src="https://source.unsplash.com/400x500/?cycling" alt="Deporte" data-category="deporte" onclick="openLightbox(this)">
+
+    <!-- Fauna -->
+    <img src="https://source.unsplash.com/400x600/?deer" alt="Fauna" data-category="fauna" onclick="openLightbox(this)">
+    <img src="https://source.unsplash.com/400x500/?wildlife" alt="Fauna" data-category="fauna" onclick="openLightbox(this)">
+
+    <!-- Turismo -->
+    <img src="https://source.unsplash.com/400x600/?albarracin,spain" alt="Turismo" data-category="turismo" onclick="openLightbox(this)">
+    <img src="https://source.unsplash.com/400x500/?village,spain" alt="Turismo" data-category="turismo" onclick="openLightbox(this)">
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Ampliada">
+  </div>
+
+  <footer>
+    <p>Alevial</p>
+  </footer>
+</body>
+</html>
+ 
