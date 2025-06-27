@@ -2,15 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Porfolio | Alevial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Neuton&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porfolio - Alevial</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-
-<header>
-  <nav class="main-nav">
+<body class="fondo-textura">
+  <nav id="navbar" class="navbar">
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="portfolio.html" class="active">Porfolio</a></li>
@@ -19,44 +16,79 @@
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
-</header>
 
-<main>
-  <section class="portfolio-section">
-    <h2>Porfolio de Fotografía</h2>
+  <main>
+    <h2 class="titulo-seccion">Porfolio</h2>
 
-    <div class="portfolio-filters">
-      <button class="filter-btn active" data-category="todos">Todos</button>
-      <button class="filter-btn" data-category="fauna">Fauna</button>
-      <button class="filter-btn" data-category="tauinas">Tauinas</button>
-      <button class="filter-btn" data-category="turismo">Turismo</button>
-      <button class="filter-btn" data-category="deportes">Deportes</button>
-    </div>
+    <section class="galeria">
+      <h3>Fauna silvestre</h3>
+      <div class="masonry">
+        <img src="images/fauna/1.jpg" />
+        <img src="images/fauna/2.jpg" />
+        <img src="images/fauna/3.jpg" />
+        <img src="images/fauna/4.jpg" />
+        <img src="images/fauna/5.jpg" />
+        <img src="images/fauna/6.jpg" />
+        <img src="images/fauna/7.jpg" />
+        <img src="images/fauna/8.jpg" />
+        <img src="images/fauna/9.jpg" />
+        <img src="images/fauna/10.jpg" />
+        <img src="images/fauna/11.jpg" />
+        <img src="images/fauna/12.jpg" />
+      </div>
 
-    <div class="portfolio-grid">
-      <!-- Fauna -->
-      <div class="portfolio-item fauna" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80');" aria-label="Fauna 1"></div>
-      <div class="portfolio-item fauna" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80');" aria-label="Fauna 2"></div>
-      <div class="portfolio-item fauna" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1445820137045-8a78e7ed8ed0?auto=format&fit=crop&w=600&q=80');" aria-label="Fauna 3"></div>
+      <h3>Capeas / Festejos taurinos</h3>
+      <div class="masonry">
+        <img src="images/taurinas/1.jpg" />
+        <img src="images/taurinas/2.jpg" />
+        <img src="images/taurinas/3.jpg" />
+        <img src="images/taurinas/4.jpg" />
+        <img src="images/taurinas/5.jpg" />
+        <img src="images/taurinas/6.jpg" />
+        <img src="images/taurinas/7.jpg" />
+        <img src="images/taurinas/8.jpg" />
+        <img src="images/taurinas/9.jpg" />
+        <img src="images/taurinas/10.jpg" />
+        <img src="images/taurinas/11.jpg" />
+        <img src="images/taurinas/12.jpg" />
+      </div>
 
-      <!-- Tauinas -->
-      <div class="portfolio-item tauinas" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1531983412531-b60d3e27ed6e?auto=format&fit=crop&w=600&q=80');" aria-label="Tauinas 1"></div>
-      <div class="portfolio-item tauinas" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1532596413509-124f63e0aa7f?auto=format&fit=crop&w=600&q=80');" aria-label="Tauinas 2"></div>
-      <div class="portfolio-item tauinas" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80');" aria-label="Tauinas 3"></div>
+      <h3>Turismo</h3>
+      <div class="masonry">
+        <img src="images/turismo/1.jpg" />
+        <img src="images/turismo/2.jpg" />
+        <img src="images/turismo/3.jpg" />
+        <img src="images/turismo/4.jpg" />
+        <img src="images/turismo/5.jpg" />
+        <img src="images/turismo/6.jpg" />
+        <img src="images/turismo/7.jpg" />
+        <img src="images/turismo/8.jpg" />
+        <img src="images/turismo/9.jpg" />
+        <img src="images/turismo/10.jpg" />
+        <img src="images/turismo/11.jpg" />
+        <img src="images/turismo/12.jpg" />
+      </div>
 
-      <!-- Turismo -->
-      <div class="portfolio-item turismo" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');" aria-label="Turismo 1"></div>
-      <div class="portfolio-item turismo" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80');" aria-label="Turismo 2"></div>
-      <div class="portfolio-item turismo" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80');" aria-label="Turismo 3"></div>
+      <h3>Deporte</h3>
+      <div class="masonry">
+        <img src="images/deportes/1.jpg" />
+        <img src="images/deportes/2.jpg" />
+        <img src="images/deportes/3.jpg" />
+        <img src="images/deportes/4.jpg" />
+        <img src="images/deportes/5.jpg" />
+        <img src="images/deportes/6.jpg" />
+        <img src="images/deportes/7.jpg" />
+        <img src="images/deportes/8.jpg" />
+        <img src="images/deportes/9.jpg" />
+        <img src="images/deportes/10.jpg" />
+        <img src="images/deportes/11.jpg" />
+        <img src="images/deportes/12.jpg" />
+      </div>
+    </section>
+  </main>
 
-      <!-- Deportes -->
-      <div class="portfolio-item deportes" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80');" aria-label="Deportes 1"></div>
-      <div class="portfolio-item deportes" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1509475826633-fed577a2c71b?auto=format&fit=crop&w=600&q=80');" aria-label="Deportes 2"></div>
-      <div class="portfolio-item deportes" tabindex="0" style="background-image: url('https://images.unsplash.com/photo-1526403220531-57f8c56de7a3?auto=format&fit=crop&w=600&q=80');" aria-label="Deportes 3"></div>
-    </div>
-  </section>
-</main>
-
-<script src="script.js"></script>
+  <footer>
+    <p>Alevial</p>
+  </footer>
 </body>
 </html>
