@@ -280,3 +280,22 @@ footer {
   padding: 1rem;
   margin-top: 4rem;
 }
+/* Contenedor general para la página de inicio (índice) */
+.contenedor-inicio {
+  max-width: 1100px;       /* ancho máximo para que no sea demasiado ancho */
+  margin: 0 auto;          /* centra horizontalmente */
+  padding: 2rem 1rem;      /* espacio arriba/abajo y lateral */
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centra horizontalmente todos los elementos hijos */
+  gap: 2rem;               /* espacio vertical entre elementos */
+  text-align: center;      /* centra texto dentro del contenedor */
+}
+
+/* Ajusta tamaño del título principal si quieres */
+.contenedor-inicio h1,
+.contenedor-inicio h2,
+.contenedor-inicio p {
+  max-width: 800px;
+  margin: 0 auto;
+}
