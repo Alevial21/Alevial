@@ -9,8 +9,10 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Alegreya&display=swap" rel="stylesheet" />
 </head>
-<body>
-  <header class="header" id="navbar">
+<body class="fondo-textura">
+
+  <!-- Menú superior -->
+  <header class="header navbar" id="navbar">
     <nav class="nav">
       <a href="index.html" class="logo">Alevial</a>
       <ul class="nav-links">
@@ -23,9 +25,13 @@
     </nav>
   </header>
 
+  <!-- Formulario de contacto -->
   <main class="contact-container scroll-fade">
     <h1>Contacto</h1>
-    <form id="contact-form" novalidate>
+
+    <p class="contact-description">Puedes escribirme directamente a <a href="mailto:Alevial21@gmail.com">Alevial21@gmail.com</a> o completar el siguiente formulario:</p>
+
+    <form id="contact-form" class="contact-form" novalidate>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
 
